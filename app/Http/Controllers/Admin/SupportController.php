@@ -23,6 +23,7 @@ class SupportController extends Controller
     {
        $supports = $this->service->getAll($request->filter);
 
+
        return view('admin/supports/index', compact('supports'));
     }
 
